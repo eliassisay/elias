@@ -1,0 +1,180 @@
+@import url('./fonts.css');
+@import url('./styles.css');
+body {
+    background: url('../m/location-hero.jpg'), linear-gradient(to top, rgb(67, 67, 67) 0%, #02050c 100%);
+    background-size: 50vw;
+    background-repeat: repeat;
+    background-position-x: -10vw;
+}
+
+.hero {
+    background: radial-gradient(circle, #07084180 0%, transparent 100%), url('../m/location-hero2.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.everything {
+    position: relative;
+}
+
+.skills {
+    font-family: sans-serif;
+    background: radial-gradient(circle, #07084180 0%, transparent 100%), url('../m/location-hero2.jpg') center no-repeat;
+    ;
+}
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .line {
+    height: 10px;
+    background: crimson;
+}
+
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.skills .skills-content .right .html::before {
+    width: 70%;
+}
+
+.skills .skills-content .right .css::before {
+    width: 60%;
+}
+
+.skills .skills-content .right .js::before {
+    width: 60%;
+}
+
+.skills .skills-content .right .java::before {
+    width: 90%;
+}
+
+footer {
+    background: url('../m/location-hero.jpg') center no-repeat;
+    background-size: cover;
+    margin-top: 0;
+}
+
+@media only screen and (orientation: landscape) {
+    .single-menu {
+        height: auto;
+    }
+    .menux-content {
+        position: relative;
+        width: 30%;
+        height: 50%;
+        background: #0a162a;
+        padding: 0px;
+        top: -25%;
+        z-index: 100;
+    }
+    .pic-left {
+        width: 25vh;
+        height: 25vh;
+        position: relative;
+        top: 5rem;
+        right: 30vw;
+        z-index: 200;
+    }
+    .pic-right {
+        width: 25vh;
+        height: 25vh;
+        position: relative;
+        top: 5rem;
+        right: -70%;
+        z-index: 200;
+    }
+    .menux-title {
+        font-size: 7rem;
+    }
+    .menux-right {
+        margin-left: 15%;
+    }
+    .menux-left {
+        margin-left: 53%;
+    }
+    .menux-text {
+        padding: 4rem 0;
+    }
+    .menux-text::after {
+        content: "";
+        position: relative;
+        width: 30%;
+        height: 50%;
+        background: #fff;
+        padding: 0px;
+        top: -25%;
+        z-index: 100;
+        left: 5vw;
+    }
+    .the-menu-names {
+        font-size: 3vh;
+    }
+    .single-menu {
+        background-position: right;
+        background-size: 50%;
+    }
+    .cutout-right {
+        background-position: 35% 20rem;
+        background-size: 30%;
+    }
+    .cutout-left {
+        background-position: 60% 20rem;
+        background-size: 30%;
+    }
+    .order-btn {
+        margin-top: 10vh;
+        padding: 1vh 8vh;
+        font-size: 3vh;
+        border-radius: 150px;
+    }
+}
+
+@-webkit-keyframes popupTop {
+    0% {
+        top: -50%;
+        opacity: 0;
+    }
+    100% {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes popupTop {
+    0% {
+        top: -50%;
+        opacity: 0;
+    }
+    100% {
+        top: 50%;
+        opacity: 1;
+    }
+}

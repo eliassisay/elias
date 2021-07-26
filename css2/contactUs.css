@@ -1,0 +1,104 @@
+        @import url('./fonts.css');
+    @import url('./styles.css');
+    .hero {
+        background: radial-gradient(circle, #07084180 0%, transparent 100%), url('../images/hero-contact.jpg') center no-repeat;
+        background-size: cover;
+        display: flex;
+        text-align: center;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+        padding-top: 30vh;
+    }
+    
+    .contact {
+        font-family: sans-serif;
+    }
+    
+    .contact .title {
+        text-align: center;
+        position: relative;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        font-family: sans-serif;
+    }
+    
+    .contact .title::before {
+        content: "";
+        position: absolute;
+        bottom: -7px;
+        left: 50%;
+        width: 180px;
+        height: 3px;
+        background: #111;
+        transform: translateX(-50%);
+    }
+    
+    .contact .title::after {
+        content: "what i provide";
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        font-size: 20px;
+        color: crimson;
+        padding: 5px;
+        background: #fff;
+        transform: translateX(-50%);
+    }
+    
+    .contact .contact-content .column {
+        width: calc(50% - 30px);
+    }
+    
+    .contact .contact-content .text {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .contact .contact-content .left p {
+        text-align: justify;
+    }
+    
+    .contact .contact-content .left .icons {
+        margin: 10px 0;
+    }
+    
+    .contact .contact-content .row {
+        display: flex;
+        height: 65px;
+        align-items: center;
+    }
+    
+    .contact .contact-content .row .info {
+        margin-left: 30px;
+    }
+    
+    .contact .contact-content .row i {
+        font-size: 25px;
+        color: #8ecdff;
+    }
+    
+    .contact .contact-content .info .head {
+        font-weight: 500;
+    }
+    
+    .contact .contact-content .info .sub-title {
+        color: #333;
+    }
+    
+    .contact .right form .fields {
+        display: flex;
+    }
+    
+    .contact .right form .fields,
+    .contact .right form .fields .field {
+        height: 45px;
+        width: 100px;
+    }
+    
+    contact .right form .field input {
+        height: 100%;
+        width: 100%;
